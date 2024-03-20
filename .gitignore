@@ -1,0 +1,5 @@
+.DS_Store
+microservices/shared
+infra/volumes/docker-volumes
+infra/volumes/kibana.yml
+infra/volumes/secrets.md

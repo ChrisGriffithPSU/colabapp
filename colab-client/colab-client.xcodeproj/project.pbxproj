@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7DB97912B86A14A000DBB45 /* ColabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB97902B86A14A000DBB45 /* ColabApp.swift */; };
+		F7DB97932B86A14A000DBB45 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB97922B86A14A000DBB45 /* HomeView.swift */; };
+		F7DB97952B86A14F000DBB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DB97942B86A14F000DBB45 /* Assets.xcassets */; };
+		F7DB97982B86A14F000DBB45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DB97972B86A14F000DBB45 /* Preview Assets.xcassets */; };
+		F7DF50B02B9279760047DF5C /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF50AF2B9279750047DF5C /* KeychainService.swift */; };
+		F7F06A2F2B8CFBD200559779 /* KumbhSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7F06A2E2B8CFBD200559779 /* KumbhSans.ttf */; };
+		F7F06A312B8D029000559779 /* DetailsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F06A302B8D029000559779 /* DetailsComponent.swift */; };
+		F7F06A342B8D07AC00559779 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F06A332B8D07AC00559779 /* RoomView.swift */; };
+		F7F06A382B8D101B00559779 /* DocTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F06A372B8D101B00559779 /* DocTextView.swift */; };
+		F7F06A3A2B8D165500559779 /* TextHighlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F06A392B8D165500559779 /* TextHighlight.swift */; };
+		F7FA5E572B8E66ED00EDBB3D /* HTTPDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA5E562B8E66ED00EDBB3D /* HTTPDataDownloader.swift */; };
+		F7FA5E592B8E671000EDBB3D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA5E582B8E671000EDBB3D /* APIError.swift */; };
+		F7FA5E5B2B8E672900EDBB3D /* HTTPPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA5E5A2B8E672900EDBB3D /* HTTPPostRequest.swift */; };
+		F7FA5E5D2B8E675B00EDBB3D /* GenericCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA5E5C2B8E675B00EDBB3D /* GenericCache.swift */; };
+		F7FA5E602B8E67B100EDBB3D /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = F7FA5E5F2B8E67B100EDBB3D /* SocketIO */; };
+		F7FA5E642B8E689A00EDBB3D /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA5E632B8E689A00EDBB3D /* SocketService.swift */; };
+		F7FA5E662B8E6B0200EDBB3D /* KeyboardTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA5E652B8E6B0200EDBB3D /* KeyboardTool.swift */; };
+		F7FA5E682B8E6B1A00EDBB3D /* MoreKeyboardTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA5E672B8E6B1A00EDBB3D /* MoreKeyboardTool.swift */; };
+		F7FA5E6A2B8E6EFF00EDBB3D /* SelectHighlightColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA5E692B8E6EFF00EDBB3D /* SelectHighlightColor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F7DB978D2B86A14A000DBB45 /* colab-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "colab-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DB97902B86A14A000DBB45 /* ColabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColabApp.swift; sourceTree = "<group>"; };
+		F7DB97922B86A14A000DBB45 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F7DB97942B86A14F000DBB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7DB97972B86A14F000DBB45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7DF50AF2B9279750047DF5C /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		F7F06A282B8CF77200559779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F7F06A2E2B8CFBD200559779 /* KumbhSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = KumbhSans.ttf; path = ../../../Kumbh_Sans/KumbhSans.ttf; sourceTree = "<group>"; };
+		F7F06A302B8D029000559779 /* DetailsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsComponent.swift; sourceTree = "<group>"; };
+		F7F06A332B8D07AC00559779 /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		F7F06A372B8D101B00559779 /* DocTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocTextView.swift; sourceTree = "<group>"; };
+		F7F06A392B8D165500559779 /* TextHighlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHighlight.swift; sourceTree = "<group>"; };
+		F7FA5E562B8E66ED00EDBB3D /* HTTPDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataDownloader.swift; sourceTree = "<group>"; };
+		F7FA5E582B8E671000EDBB3D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		F7FA5E5A2B8E672900EDBB3D /* HTTPPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPPostRequest.swift; sourceTree = "<group>"; };
+		F7FA5E5C2B8E675B00EDBB3D /* GenericCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCache.swift; sourceTree = "<group>"; };
+		F7FA5E632B8E689A00EDBB3D /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		F7FA5E652B8E6B0200EDBB3D /* KeyboardTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTool.swift; sourceTree = "<group>"; };
+		F7FA5E672B8E6B1A00EDBB3D /* MoreKeyboardTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreKeyboardTool.swift; sourceTree = "<group>"; };
+		F7FA5E692B8E6EFF00EDBB3D /* SelectHighlightColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHighlightColor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7DB978A2B86A14A000DBB45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7FA5E602B8E67B100EDBB3D /* SocketIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7DB97842B86A14A000DBB45 = {
+			isa = PBXGroup;
+			children = (
+				F7DB978F2B86A14A000DBB45 /* colab-client */,
+				F7DB978E2B86A14A000DBB45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7DB978E2B86A14A000DBB45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7DB978D2B86A14A000DBB45 /* colab-client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7DB978F2B86A14A000DBB45 /* colab-client */ = {
+			isa = PBXGroup;
+			children = (
+				F7F06A282B8CF77200559779 /* Info.plist */,
+				F7DB979E2B86A278000DBB45 /* App */,
+				F7DB979F2B86A2A8000DBB45 /* Core */,
+				F7DB97A02B86A2AB000DBB45 /* Shared */,
+				F7FA5E552B8E65F400EDBB3D /* Services */,
+				F7DB97A32B86A37C000DBB45 /* Extensions */,
+				F7DB97A42B86A389000DBB45 /* Managers */,
+				F7DB97A52B86A38E000DBB45 /* Models */,
+				F7DB97942B86A14F000DBB45 /* Assets.xcassets */,
+				F7F06A2E2B8CFBD200559779 /* KumbhSans.ttf */,
+				F7DB97962B86A14F000DBB45 /* Preview Content */,
+			);
+			path = "colab-client";
+			sourceTree = "<group>";
+		};
+		F7DB97962B86A14F000DBB45 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7DB97972B86A14F000DBB45 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7DB979E2B86A278000DBB45 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F7DB97902B86A14A000DBB45 /* ColabApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F7DB979F2B86A2A8000DBB45 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F7F06A322B8D077C00559779 /* Document */,
+				F7DB97A62B86AE0E000DBB45 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F7DB97A02B86A2AB000DBB45 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F7DB97A22B86A30F000DBB45 /* Cache */,
+				F7DB97A12B86A2FE000DBB45 /* Networking */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F7DB97A12B86A2FE000DBB45 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F7FA5E562B8E66ED00EDBB3D /* HTTPDataDownloader.swift */,
+				F7FA5E5A2B8E672900EDBB3D /* HTTPPostRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F7DB97A22B86A30F000DBB45 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				F7FA5E5C2B8E675B00EDBB3D /* GenericCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		F7DB97A32B86A37C000DBB45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F7DB97A42B86A389000DBB45 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F7DB97A52B86A38E000DBB45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7FA5E582B8E671000EDBB3D /* APIError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7DB97A62B86AE0E000DBB45 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F7DB97922B86A14A000DBB45 /* HomeView.swift */,
+				F7F06A302B8D029000559779 /* DetailsComponent.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F7F06A322B8D077C00559779 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				F7F06A362B8D0C6B00559779 /* Text */,
+				F7F06A352B8D0C5900559779 /* KeyboardTools */,
+				F7F06A332B8D07AC00559779 /* RoomView.swift */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		F7F06A352B8D0C5900559779 /* KeyboardTools */ = {
+			isa = PBXGroup;
+			children = (
+				F7FA5E652B8E6B0200EDBB3D /* KeyboardTool.swift */,
+				F7FA5E672B8E6B1A00EDBB3D /* MoreKeyboardTool.swift */,
+				F7FA5E692B8E6EFF00EDBB3D /* SelectHighlightColor.swift */,
+			);
+			path = KeyboardTools;
+			sourceTree = "<group>";
+		};
+		F7F06A362B8D0C6B00559779 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				F7F06A372B8D101B00559779 /* DocTextView.swift */,
+				F7F06A392B8D165500559779 /* TextHighlight.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		F7FA5E552B8E65F400EDBB3D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F7FA5E632B8E689A00EDBB3D /* SocketService.swift */,
+				F7DF50AF2B9279750047DF5C /* KeychainService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7DB978C2B86A14A000DBB45 /* colab-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DB979B2B86A14F000DBB45 /* Build configuration list for PBXNativeTarget "colab-client" */;
+			buildPhases = (
+				F7DB97892B86A14A000DBB45 /* Sources */,
+				F7DB978A2B86A14A000DBB45 /* Frameworks */,
+				F7DB978B2B86A14A000DBB45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "colab-client";
+			packageProductDependencies = (
+				F7FA5E5F2B8E67B100EDBB3D /* SocketIO */,
+			);
+			productName = "colab-client";
+			productReference = F7DB978D2B86A14A000DBB45 /* colab-client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7DB97852B86A14A000DBB45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F7DB978C2B86A14A000DBB45 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = F7DB97882B86A14A000DBB45 /* Build configuration list for PBXProject "colab-client" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7DB97842B86A14A000DBB45;
+			packageReferences = (
+				F7FA5E5E2B8E67B100EDBB3D /* XCRemoteSwiftPackageReference "socket" */,
+			);
+			productRefGroup = F7DB978E2B86A14A000DBB45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7DB978C2B86A14A000DBB45 /* colab-client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7DB978B2B86A14A000DBB45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DB97982B86A14F000DBB45 /* Preview Assets.xcassets in Resources */,
+				F7DB97952B86A14F000DBB45 /* Assets.xcassets in Resources */,
+				F7F06A2F2B8CFBD200559779 /* KumbhSans.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7DB97892B86A14A000DBB45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F06A382B8D101B00559779 /* DocTextView.swift in Sources */,
+				F7FA5E572B8E66ED00EDBB3D /* HTTPDataDownloader.swift in Sources */,
+				F7DB97932B86A14A000DBB45 /* HomeView.swift in Sources */,
+				F7F06A342B8D07AC00559779 /* RoomView.swift in Sources */,
+				F7FA5E6A2B8E6EFF00EDBB3D /* SelectHighlightColor.swift in Sources */,
+				F7FA5E5B2B8E672900EDBB3D /* HTTPPostRequest.swift in Sources */,
+				F7FA5E642B8E689A00EDBB3D /* SocketService.swift in Sources */,
+				F7F06A312B8D029000559779 /* DetailsComponent.swift in Sources */,
+				F7DF50B02B9279760047DF5C /* KeychainService.swift in Sources */,
+				F7FA5E592B8E671000EDBB3D /* APIError.swift in Sources */,
+				F7FA5E662B8E6B0200EDBB3D /* KeyboardTool.swift in Sources */,
+				F7DB97912B86A14A000DBB45 /* ColabApp.swift in Sources */,
+				F7FA5E682B8E6B1A00EDBB3D /* MoreKeyboardTool.swift in Sources */,
+				F7FA5E5D2B8E675B00EDBB3D /* GenericCache.swift in Sources */,
+				F7F06A3A2B8D165500559779 /* TextHighlight.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F7DB97992B86A14F000DBB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7DB979A2B86A14F000DBB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7DB979C2B86A14F000DBB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"colab-client/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "colab-client/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.colabapp.colab-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7DB979D2B86A14F000DBB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"colab-client/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "colab-client/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.colabapp.colab-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7DB97882B86A14A000DBB45 /* Build configuration list for PBXProject "colab-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DB97992B86A14F000DBB45 /* Debug */,
+				F7DB979A2B86A14F000DBB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DB979B2B86A14F000DBB45 /* Build configuration list for PBXNativeTarget "colab-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DB979C2B86A14F000DBB45 /* Debug */,
+				F7DB979D2B86A14F000DBB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F7FA5E5E2B8E67B100EDBB3D /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F7FA5E5F2B8E67B100EDBB3D /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7FA5E5E2B8E67B100EDBB3D /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F7DB97852B86A14A000DBB45 /* Project object */;
+}
